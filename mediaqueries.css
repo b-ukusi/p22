@@ -1,0 +1,27 @@
+/*
+animation: zoom 2s ease-in forwards;
+   transform-origin: center center;
+   transform: scale(0.5);
+@keyframes zoom{
+    from{
+        transform: scale(0.5);
+    }
+    to{
+        transform: scale(1);
+    }
+}*/
+p{
+    animation: fade linear;
+    animation-timeline: view();
+}
+
+@keyframes fade{
+    from{
+        opacity: 0.5;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+

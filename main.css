@@ -66,7 +66,21 @@ a:hover{
 
 .profile-pic{
     width: 350px;
-   
+animation-name: imgslideinleft;
+    animation-duration: 1.1s;
+    animation-timing-function:ease-in ;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+@keyframes imgslideinleft{
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0);
+    }
 }
 
 .profile-content{
@@ -93,23 +107,33 @@ h1{
 }
 .socials_img{
     width: 80px;
+   
 }
+
+
 /* About secttion*/
 
 #about{
-    height: 130vh;
-    background-color: blueviolet;
+    height: 110vh;
 }
 h2{
     text-align: center;
     font-size: 3rem;
+    margin-bottom: 2%;
 }
 .education{
     display: flex;
+    gap: 3rem;
 }
 .education_p1{
-
+    margin-left: 7%;
+    margin-top: 1%;
 }
+.education_p2{
+    margin-top: 4%;
+}
+
+
 .education-experience_box{
     display: flex;
     gap: 2rem;
@@ -132,9 +156,142 @@ padding: 1.5rem;
 
 .about_img{
     width: 500px;
+   border-radius: 10px; 
 }
+
+   
+
+
+
+
 .blog_content{
     display: flex;
-    background-color: olive;
+   gap: 3rem;
     margin-top: 4%;
+     margin-left: 7%;
 }
+
+.btn-1{
+    width: 200px;
+    height: 40px;
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+.blog-webig{
+   /* background-color: red;*/
+}
+.blog-webig:hover{
+text-decoration: none;
+color: rgb(182, 76,68);
+}
+.ig-image{
+    width: 23px;
+}
+.blog-image{
+    width: 23px;
+}
+
+/* Experience section*/
+#experience{
+    height: 150vh;
+
+}
+.experience_paragraphs{
+    display: flex;
+    gap: 7rem;
+}
+
+.experience_p1{
+    margin-left: 6%;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+.experience_p2{
+  list-style:none;
+  padding: 1.5rem;
+  background:white;
+  border-radius: 2rem;
+  border: rgb(53,53,53) 0.1rem solid;
+  border-color: black;
+ 
+  
+}
+.cv_btn{
+    margin-left: 30%;
+}
+.button1{
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    border: solid;
+    transition: all 300ms ease;
+    font-weight: 600;
+    font-size: 100%;
+    background-color: rgb(85, 85, 85);
+   border-color: black;
+}
+.button1:hover{
+    background: rgb(182,76,68);
+    cursor: pointer;
+}
+/* project section within experience*/
+
+.projects{
+    width: 100vh;
+}
+h4{
+    margin-left: 90%;
+    margin-top: 5%;
+    font-size: 40px;
+}
+
+
+
+
+
+/* contact section */
+#contact{
+    height: 50vh;
+}
+.contact_details{
+    display: flex;
+    margin-top: 5%;
+    margin-left: 31%;
+    gap: 5rem;
+}
+.contact1{
+    border-color: black;
+    border-radius: 2rem;
+}
+/* footer syling */
+footer{
+    height:10vh;
+    background-color: rgb(182, 76,68);
+    
+   
+}
+.footer-content{
+    color: black;
+   text-align: center;
+}
+.footer-content:hover{
+    text-decoration: none;
+    text-underline-offset: none;
+}
+/* transition style */
+
+p{
+    animation: fade linear;
+    animation-timeline: view();
+}
+
+@keyframes fade{
+    from{
+        opacity: 0.5;
+    }
+    to{
+        opacity:1;
+    }
+}
+
